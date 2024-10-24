@@ -36,6 +36,7 @@ public class CustomListTest {
         Assertions.assertFalse(list.hasCity(dummyCity));
 
     }
+    @Test
     public void deleteCityTest(){
         list = MockCityList();
         City city = new City("Estevan","SK");
