@@ -58,7 +58,11 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void deleteCity(City city){
-        cities.remove(city);
+        boolean removed = cities.remove(city);
+        //if (!removed) {
+            //throw new IllegalArgumentException("City not found: " + city.getCityName());
+        //}
+
     }
 
 }
